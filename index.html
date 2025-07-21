@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Vendas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+  <div class="container">
+    <h1>Phone Land</h1>
+    <nav class="menu">
+      <a href="#produtos">Produtos</a>
+      <a href="#contato">Contato</a>
+      <a href="#informacoes">Informações</a>
+    </nav>
+  </div>
+</header>
+    <main id="informações">
+    <div class="texto">
+        <h1>Nossa qualidade é incomparável!</h1>
+        
+        <p>A Phone Land é muito mais do que uma loja de celulares — é um lugar onde qualidade, confiança e bom atendimento caminham juntos. Aqui, você encontra uma ampla variedade de produtos, desde os lançamentos mais modernos até acessórios essenciais, sempre com garantia e procedência. Nosso time é formado por profissionais preparados para oferecer o melhor atendimento, tirar dúvidas e orientar você na melhor escolha. Além disso, oferecemos serviços técnicos especializados, com agilidade e transparência, para que você tenha total segurança na hora de comprar ou consertar seu aparelho. Na Phone Land, o compromisso é com a sua satisfação. Temos certeza de que, ao nos escolher, você fará parte de uma experiência que vai muito além da compra — e que não vai se arrepender!</p>
+    </div>
+    <div class="Foto">
+        <img src="imagens/iphonestodos.jpg" alt="Demonstração"> 
+        <img src="imagens/outrosiphones.jpeg" alt="demonstração">
+    </div>
+    
+</main>
+<section class="vendas" id="produtos">
+    <div class="card1">
+            <h1>Iphone 16</h1>
+            <p>Card destinado à divulgação do produto Iphone 16 à venda na loja Phone Land. Sem receio, seja feliz comprando pelos melhores preços em nossa agência e te entregaremos o melhor produto e resultado possível!</p>
+            <img src="imagens/iphone 16.webp" alt="16">
+            <input type="button" value="Comprar" onclick="clicou(this)">
+        </div>
+        <div class="card2">
+            <h1>Iphone 15</h1>
+            <p>Card destinado à divulgação do produto Iphone 15 à venda na loja Phone Land. Sem receio, seja feliz comprando pelos melhores preços em nossa agência e te entregaremos o melhor produto e resultado possível!</p>
+            <img src="imagens/15.avif" alt="15">
+            <input type="button" value="Comprar" onclick="clicou(this)">
+        </div>
+        <div class="card3">
+            <h1>Iphone 14</h1>
+            <p>Card destinado à divulgação do produto Iphone 14 à venda na loja Phone Land. Sem receio, seja feliz comprando pelos melhores preços em nossa agência e te entregaremos o melhor produto e resultado possível!</p>
+            <img src="imagens/iphone 14.jpg" alt="14">
+            <input type="button" value="Comprar" onclick="clicou(this)">
+        </div>
+        <div class="card4">
+            <h1>Iphone 13</h1>
+            <p>Card destinado à divulgação do produto Iphone 13 à venda na loja Phone Land. Sem receio, seja feliz comprando pelos melhores preços em nossa agência e te entregaremos o melhor produto e resultado possível!</p>
+            <img src="imagens/Iphone 13.webp" alt="13">
+            <input type="button" value="Comprar" onclick="clicou(this)">
+        </div>
+</section>
+<footer id="contato">
+    <div class="contato">
+        <h3>Fale conosco</h3>
+        <p>📞 (11) 94743-0684</p>
+        <p>✉️ lopesdede52@gmail.com</p>
+        <p>🕐 Atendimento: Seg a Sex - 9h às 18h</p>
+        <p>Esse site é apenas uma simulação! A loja não existe por enquanto...</p>
+    </div>
+    <div class="redes-sociais">
+        <a href="https://instagram.com" target="_blank">Instagram</a> 
+
+    </div>
+    <p>&copy; 2025 Phone Land. Todos os direitos reservados.</p>
+</footer>
+<script>
+    function clicou(botao) {
+        botao.value = "Não disponível!";
+        botao.style.backgroundColor = "darkred";
+        botao.style.color = "white"
+    }
+</script>
+</body>
+</html>
