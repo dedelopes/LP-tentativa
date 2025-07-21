@@ -1,0 +1,429 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #f5f5f5;
+  padding: 20px 40px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 36px;
+  color: #333;
+  font-family: sans-serif;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.3em;
+  font-family: sans-serif;
+  padding: 10px 15px;
+  transition: background 0.4s;
+}
+
+.menu a:hover {
+  background-color: #ddd;
+  border-radius: 15px;
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.87) ;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.712);
+}
+
+.Foto {
+    display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;     /* centraliza verticalmente */
+  height: 100vh;           /* usa 100% da altura da tela */
+}
+
+.Foto img {
+  max-width: 100%;
+  height: auto;
+  padding: 20px;
+  box-shadow: 5px 10px 20px rgb(104, 255, 230);
+}
+
+.texto > h1 {
+ color: rgba(139, 218, 255, 0.945);
+ display:flex;
+ padding-top: 60px;
+ padding-bottom: 30px;
+ margin: auto;
+ justify-content: center;
+ font-size: 2em;
+
+}
+
+.texto > p {
+    color: white;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.44em;
+    align-items: center;
+    padding: 15px;
+    line-height: 1.6em;
+    width: 60%;
+    text-align: justify;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.589);
+}
+
+.vendas {
+    display: flex;
+}
+
+.card1 {
+    margin: 20px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: rgb(54, 54, 54);
+    width: 25%;
+    border: 3px solid rgba(255, 255, 255, 0.74)
+}
+
+.card1:hover {
+    background-color: rgb(36, 36, 36);
+}
+
+.card1 > h1 {
+    color: rgba(139, 218, 255, 0.945);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    display: flex;
+    position: relative;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+.card1 > h1::before {
+  content: '';
+  position: absolute;
+  top: 0; /* posição do overline */
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: rgba(139, 218, 255, 0.945);
+  transition: width 0.3s ease;
+}
+
+.card1 > h1:hover::before {
+  width: 100%;
+}
+
+.card1 > p {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 1.1em;
+    padding-bottom: 20px;
+}
+
+.card1 > img {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.521);
+}
+
+.card1 > input {
+    padding: 10px;
+    color: black;
+    background: white;
+    display: flex;
+    margin: auto;
+    margin-top: 25px;
+    width: 350px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card1 > input:hover {
+    color: black;
+    background-color:cornflowerblue;
+    transition: 0.4s;
+}
+
+.card2 {
+    margin: 20px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: rgb(54, 54, 54);
+    width: 25%;
+    border: 3px solid rgba(255, 255, 255, 0.74)
+}
+
+.card2:hover {
+    background-color: rgb(36, 36, 36);
+}
+
+.card2 > h1 {
+    color: rgba(139, 218, 255, 0.945);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    display: flex;
+    position: relative;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+.card2 > p {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 1.1em;
+    padding-bottom: 20px;
+}
+
+.card2 > h1::before {
+  content: '';
+  position: absolute;
+  top: 0; /* posição do overline */
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: rgba(139, 218, 255, 0.945);
+  transition: width 0.3s ease;
+}
+
+.card2 > h1:hover::before {
+  width: 100%;
+}
+
+.card2 > img {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.521);
+}
+
+.card2 > input {
+    padding: 10px;
+    color: black;
+    background: white;
+    display: flex;
+    margin: auto;
+    margin-top: 25px;
+    width: 350px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card2 > input:hover {
+    color: black;
+    background-color:cornflowerblue;
+    transition: 0.4s;
+}
+
+.card3 {
+    margin: 20px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: rgb(54, 54, 54);
+    width: 25%;
+    border: 3px solid rgba(255, 255, 255, 0.74)
+}
+
+.card3:hover {
+    background-color: rgb(36, 36, 36);
+}
+
+.card3 > h1 {
+    color: rgba(139, 218, 255, 0.945);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    display: flex;
+    position: relative;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+.card3 > p {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 1.1em;
+    padding-bottom: 20px;
+}
+
+.card3 > h1::before {
+  content: '';
+  position: absolute;
+  top: 0; /* posição do overline */
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: rgba(139, 218, 255, 0.945);
+  transition: width 0.3s ease;
+}
+
+.card3 > h1:hover::before {
+  width: 100%;
+}
+
+.card3 > img {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.521);
+}
+
+.card3 > input {
+    padding: 10px;
+    color: black;
+    background: white;
+    display: flex;
+    margin: auto;
+    margin-top: 25px;
+    width: 350px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card3 > input:hover {
+    color: black;
+    background-color:cornflowerblue;
+    transition: 0.4s;
+}
+
+.card4 {
+    margin: 20px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: rgb(54, 54, 54);
+    width: 25%;
+    border: 3px solid rgba(255, 255, 255, 0.74)
+}
+
+.card4:hover {
+    background-color: rgb(36, 36, 36);
+}
+
+.card4 > h1 {
+    color: rgba(139, 218, 255, 0.945);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    display: flex;
+    position: relative;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+.card4 > p {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 1.1em;
+    padding-bottom: 20px;
+}
+
+.card4 > h1::before {
+  content: '';
+  position: absolute;
+  top: 0; /* posição do overline */
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: rgba(139, 218, 255, 0.945);
+  transition: width 0.3s ease;
+}
+
+.card4 > h1:hover::before {
+  width: 100%;
+}
+
+.card4 > img {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.521);
+}
+
+.card4 > input {
+    padding: 10px;
+    color: black;
+    background: white;
+    display: flex;
+    margin: auto;
+    margin-top: 25px;
+    width: 350px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card4 > input:hover {
+    color: black;
+    background-color:cornflowerblue;
+    transition: 0.4s;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+footer a {
+  color: cornflowerblue;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
